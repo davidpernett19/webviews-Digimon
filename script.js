@@ -10,9 +10,9 @@ const evoluciones = {
     descripcion: "Garurumon es la evolución de Gabumon. Es un Digimon lobo cubierto de piel azul, rápido y feroz en combate.",
   },
   palmon: {
-    nombre: "Togemon",
+    nombre: "Ikkakumon",
     imagen: "images/ikkakumon.png",
-    descripcion: "Togemon es la evolución de Palmon. Es un cactus gigante que ataca con sus poderosos puños espinosos.",
+    descripcion: "Togemon es la evolución de Gomamon. Es un bisonte gigante que ataca con su cuerno y puede nadar por todos los mares.",
   },
 };
 
