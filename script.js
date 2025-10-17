@@ -12,7 +12,7 @@ const evoluciones = {
   palmon: {
     nombre: "Ikkakumon",
     imagen: "images/ikkakumon.png",
-    descripcion: "Togemon es la evolución de Gomamon. Es un bisonte gigante que ataca con su cuerno y puede nadar por todos los mares.",
+    descripcion: "Ikkakumon es la evolución de Gomamon. Un Digimon marino fuerte y valiente que lanza misiles desde su cuerno con su ataque 'Harpoon Torpedo'.",
   },
 };
 
