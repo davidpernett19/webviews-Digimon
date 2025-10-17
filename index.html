@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIGI-API</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon Evoluciones</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>🌟 Digievoluciones 🌟</h1>
+  </header>
 
-    <h1>DIGI-API</h1>
-    <script src="script.js"></script>
-    
+  <main>
+    <div class="container">
+      <div class="digimon-card" onclick="mostrarEvolucion('agumon')">
+        <img src="images/01 AGUMON.png" alt="Agumon" />
+        <h2>Agumon</h2>
+      </div>
+
+      <div class="digimon-card" onclick="mostrarEvolucion('gabumon')">
+        <img src="images/03 gabumon.png" alt="Gabumon" />
+        <h2>Gabumon</h2>
+      </div>
+
+      <div class="digimon-card" onclick="mostrarEvolucion('palmon')">
+        <img src="images/02 gomamon.png" alt="Gomamon" />
+        <h2>Palmon</h2>
+      </div>
+    </div>
+
+    <div id="evolucion" class="evolucion oculto">
+      <h2 id="nombreEvolucion"></h2>
+      <img id="imgEvolucion" src="" alt="Evolución" />
+      <button onclick="cerrarEvolucion()">Cerrar</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
