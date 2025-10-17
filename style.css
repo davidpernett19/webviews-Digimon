@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #1e88e5, #42a5f5);
+  background: linear-gradient(to bottom, #1976d2, #42a5f5);
   color: white;
   text-align: center;
   margin: 0;
@@ -10,63 +10,96 @@ body {
 header {
   background: #0d47a1;
   padding: 1rem;
+  font-size: 1.3rem;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
 .digimon-card {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 15px;
   padding: 1rem;
-  width: 140px;
-  transition: transform 0.2s;
+  width: 160px;
+  transition: transform 0.25s;
   cursor: pointer;
 }
 
 .digimon-card:hover {
   transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .digimon-card img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.evolucion {
-  background: rgba(0, 0, 0, 0.8);
+/* Modal */
+.modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.evolucion img {
-  width: 200px;
-  height: 200px;
+.modal-content {
+  background: #ffffff;
+  color: #000;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 85%;
+  max-width: 350px;
+  position: relative;
 }
 
-button {
-  background: #ffca28;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  margin-top: 1rem;
-  font-weight: bold;
+.modal-content img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #000;
   cursor: pointer;
 }
 
 .oculto {
   display: none;
+}
+
+footer {
+  background: #0d47a1;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .digimon-card {
+    width: 70%;
+  }
 }
